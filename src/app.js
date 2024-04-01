@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:true}));
 app.listen(port, () => console.log(`¡Servidor arriba en el puerto ${port}`))
 
 app.get('/bienvenida', (req, res) => {
-    res.send('<h1>Bienvenido</h1>');
+    res.send('<h1>Bienvenido</h1>')
 })
 
 app.get('/products', async (req, res) =>{
